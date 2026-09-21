@@ -42,7 +42,9 @@ a8.innerText = tripleEquals("5", "5");
  * @param b
  */
 function doubleEquals(a, b){
-    //    code here
+    if(a==b)
+        return true
+    return false
 }
 
 
@@ -55,6 +57,9 @@ function doubleEquals(a, b){
  */
 function tripleEquals(a, b){
     //    code here
+    if(a===b)
+        return true
+    return false
 }
 
 /*  OPTIONAL PRACTICE: If you want more practice later, try using the "typeof" method in JS; this operator returns
@@ -93,6 +98,7 @@ a12.innerText = toBoolean(null) + 6;
   */
  function toString(a){
      //    code here
+     return String(a)
  }
 
  /**
@@ -102,6 +108,7 @@ a12.innerText = toBoolean(null) + 6;
   */
  function toNumber(a){
      //    code here
+     return Number(a)
  }
 
  /**
@@ -111,6 +118,7 @@ a12.innerText = toBoolean(null) + 6;
   */
  function toBoolean(a){
      //    code here
+     return Boolean(a)
  }
 
  /*  OPTIONAL PRACTICE: For additional practice, try converting different types of variables to other types and observe the results.
